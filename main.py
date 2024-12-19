@@ -11,13 +11,13 @@ def main():
     print(deck)
 
     while True:
-        print("---What do you want to do?---\n-draw\n-prob\n-newdeck\n-quit")
+        print("---What do you want to do?---\n-draw\n-prob\n-newdeck\n-quit---")
         answer = input()
         if answer == "draw":
             cards = func.draw()
             for x in cards:
                 deck.remove(x)
-            print("cards left in the deck:")
+            print("---Cards left in the deck:---")
             print(deck)
         elif answer == "prob":
             func.probability(deck)
